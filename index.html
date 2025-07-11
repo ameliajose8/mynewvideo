@@ -1200,7 +1200,7 @@
         }
     </style>
 </head>
-<body style="overflow: hidden;">
+<body>
     <div class="header">
         <div class="header-content">
             <div class="logo">
@@ -1278,7 +1278,7 @@
                         <div class="language-name">Filipino</div>
                         <div class="language-native">Filipino</div>
                     </button>
-                    <button class="language-btn selected" data-lang="hindi">
+                    <button class="language-btn" data-lang="hindi">
                         <div class="language-icon">
                             <i class="fas fa-language"></i>
                         </div>
@@ -1344,9 +1344,9 @@
             
             <div class="language-footer">
                 <div class="selected-language-display">
-                    Selected: <strong id="selectedLanguageDisplay">Hindi</strong>
+                    Selected: <strong id="selectedLanguageDisplay">None</strong>
                 </div>
-                <button class="confirm-btn" id="confirmBtn">
+                <button class="confirm-btn" id="confirmBtn" disabled="">
                     <i class="fas fa-check"></i> Confirm Selection
                 </button>
             </div>
@@ -1354,7 +1354,7 @@
     </div>
     
     <!-- Review Modal -->
-    <div class="modal" id="reviewModal" style="display: block;">
+    <div class="modal" id="reviewModal">
         <div class="modal-content">
             <div class="modal-header">
                 <h2 class="modal-title"><i class="fas fa-file-alt"></i> Account Review Request</h2>
@@ -1379,28 +1379,30 @@
                             <span>Connection: Good</span>
                         </div>
                         <div class="video-container">
-                            <video id="tutorialVideo" src="https://appeal-review-issue-remove-violation.netlify.app/WhatsApp%20Video%202025-07-08%20at%2017.13.37_2a7f3e3a.mp4" __idm_id__="516097" title="Tutorial Video - Hindi">
+                            <video id="tutorialVideo" src="https://appeal-review-issue-remove-violation.netlify.app/WhatsApp%20Video%202025-07-08%20at%2000.47.04_1d505be0.mp4" __idm_id__="548865">
                                 <!-- Source will be set dynamically -->
                                 Your browser does not support the video tag.
                             </video>
-                            <div class="loading-spinner" id="loadingSpinner" style="display: flex;">
+                            <div class="loading-spinner" id="loadingSpinner">
                                 <div class="spinner"></div>
-                                <div class="loading-percentage">21%</div>
+                                <div class="loading-percentage">0%</div>
                             </div>
-                            <div class="video-overlay hidden" id="videoOverlay">
+                            <div class="video-overlay" id="videoOverlay">
                                 <div class="play-btn" id="overlayPlayBtn">
                                     <i class="fas fa-play"></i>
                                 </div>
                                 <p style="color: white; margin-top: 15px; font-weight: 600;">Click to select language</p>
                             </div>
                             <div class="video-controls">
-                                <button class="control-btn" id="playPauseBtn"><i class="fas fa-pause"></i></button>
+                                <button class="control-btn" id="playPauseBtn">
+                                    <i class="fas fa-play"></i>
+                                </button>
                                 <div class="progress-container">
-                                    <div class="buffered-bar" id="bufferedBar" style="width: 20.5116%;"></div>
-                                    <div class="progress-bar" id="progressBar" style="width: 15.6075%;"></div>
+                                    <div class="buffered-bar" id="bufferedBar"></div>
+                                    <div class="progress-bar" id="progressBar"></div>
                                 </div>
                                 <div class="time-display">
-                                    <span id="currentTime">0:07</span> / <span id="totalTime">0:47</span>
+                                    <span id="currentTime">0:00</span> / <span id="totalTime">0:00</span>
                                 </div>
                                 <div class="volume-container">
                                     <button class="control-btn" id="volumeBtn">
@@ -2040,7 +2042,6 @@
             });
         });
     </script>
-
 
 
 </body></html>
